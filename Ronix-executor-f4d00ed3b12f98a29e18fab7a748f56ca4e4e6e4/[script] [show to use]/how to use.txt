@@ -1,0 +1,64 @@
+⭐ HOW TO USE SCRIPTS IN RONIX EXECUTOR (VERY SIMPLE GUIDE)
+✅ 1. Open PowerShell & go to your Ronix folder
+cd "C:\Users\USER\OneDrive\Desktop\Ronix-executor-f4d00ed3b12f98a29e18fab7a748f56ca4e4e6e4"
+
+✅ 2. Activate the venv
+.\.venv\Scripts\Activate.ps1
+
+
+You should see:
+
+(.venv)
+
+✅ 3. List available scripts
+python -m ronix_executor list
+
+
+You will see:
+
+hello_world
+blox_fruits
+doors
+...
+
+
+These are the files stored here:
+
+C:\Users\USER\.ronix_executor\scripts\
+
+✅ 4. Run a script (print it out)
+
+Example:
+
+python -m ronix_executor run hello_world
+
+
+This will print the Lua script text in your console.
+
+✅ 5. Add your own script
+➤ Easiest way (Notepad):
+notepad "C:\Users\USER\.ronix_executor\scripts\myscript.lua"
+
+
+Type your code:
+
+print("hi world working")
+
+
+Save → Close.
+
+✅ 6. Run your new script
+python -m ronix_executor run myscript
+
+
+It will print:
+
+print("hi world working")
+
+
+This is how Ronix Executor is meant to be used:
+
+✔ Organize scripts
+✔ Save scripts
+✔ Print scripts
+✖ Not execute inside Roblox
